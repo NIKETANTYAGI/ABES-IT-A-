@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 5</title>
+  <style>
+    #div{
+      width: 300px;
+      height: 300px;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <div id="div">
+    <div style="display: flex;">
+      <p style="margin-left: 70px;">Counter App</p>
+    </div>
+    <div style="text-align: center; font-size: 50px; margin-top: 50px;">
+      <p id="count"></p>
+    </div>
+    <div style="text-align: center;">
+      <button onclick=plus()>Plus</button>
+      <button onclick=minus()>Minus</button>
+    </div>
+  </div>
+  <script>
+    let count = 0;
+    let countEl = document.getElementById("count");
+    function plus(){
+      count++;
+      if(count>10){
+        alert("value exceeds 10")
+      }
+      countEl.innerText = count;
+    }
+    
+    function minus(){
+      count--;
+      if(count<0){
+      alert("Negative value");
+    }
+      countEl.innerText = count;
+    }
+    
+  </script>
+</body>
+</html>
