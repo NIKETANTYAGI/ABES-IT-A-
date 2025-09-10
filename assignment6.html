@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design card to sshow image hide and change</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+    }
+    div {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 24px;
+      text-align: center;
+      width: 260px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+  </style>
+  <div>
+    <img src="../assignment4/img3.jpg" alt="Hide" id="hideImage">
+    <button onclick="document.getElementById('hideImage').style.display='none'">Click to Hide</button>
+  </div>
+  <div>
+    <img src="../assignment4/img1.png" alt="Change Image" id="changeImage">
+    <button onclick="changeImg()">Click to change image</button>
+  </div>
+  <script>
+    function changeImg() {
+      document.getElementById('changeImage').src = "../assignment4/img3.jpg";
+    }
+  </script>
+</body>
+</html>
