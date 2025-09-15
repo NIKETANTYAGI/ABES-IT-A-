@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+    .card {
+      background: #f2f2f2;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+  </style>
 <body>
-    <script>
-        var a=2;
-        var b=3;
-        for(var i=1;i<=10;i++){
-            document.write
-        }
-    </script>
-    
+  <p id="para"></p>
+  <script>
+    // const a = ['car1','car2','car3'];
+    // document.getElementById("para").innerHTML=a;
+
+    // const car = new Array("cart1", "cart2", "cart3");
+    // car[2] = "apple";
+    // document.getElementById("para").innerHTML=car[2];
+
+    // const person={
+    //   first: "sam",
+    //   last: "sha"
+    // };
+    // document.getElementById("para").innerHTML=person.last;
+    const std1 = {
+      Name: "Sam",
+      RollNo: "215",
+      Class: "IT-A"
+    }
+    const std2 = {
+      Name: "Sha",
+      RollNo: "211",
+      Class: "IT-A"
+    }
+    const std3 = {
+      Name: "Tan",
+      RollNo: "218",
+      Class: "CSE"
+    }
+    const std4 = {
+      Name: "Ayu",
+      RollNo: "200",
+      Class: "CSE"
+    }
+    const std5 = {
+      Name: "Lui",
+      RollNo: "201",
+      Class: "CSE"
+    }
+    document.body.innerHTML += `
+      <div class="card">
+        <div class="title">Class: IT-A</div>
+        <div class="student">${std1.Name} <br> Roll No: ${std1.RollNo}</div>
+        <div class="student">${std2.Name} <br> Roll No: ${std2.RollNo}</div>
+      </div>
+    `;
+
+    document.body.innerHTML += `
+      <div class="card">
+        <div class="title">Class: CSE</div>
+        <div class="student">${std3.Name} <br> Roll No: ${std3.RollNo}</div>
+        <div class="student">${std4.Name} <br> Roll No: ${std4.RollNo}</div>
+        <div class="student">${std5.Name} <br> Roll No: ${std5.RollNo}</div>
+      </div>
+    `;
+  </script>
 </body>
 </html>
