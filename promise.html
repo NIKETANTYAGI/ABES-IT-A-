@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promises</title>
+</head>
+<body>
+  <script>
+    const mypromise = new Promise((res,rej)=>{
+      const password = "samm";
+      if(password.length>8){
+        res("Strong Password");
+      }
+      else{
+        rej("Weak Password");
+      }
+    })
+    console.log(mypromise);
+  </script>
+</body>
+</html>
