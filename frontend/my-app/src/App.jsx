@@ -20,6 +20,8 @@ function App() {
           scrolled
             ? "bg-black shadow-md"
             : "bg-gradient-to-b from-black/80 to-transparent"
+
+            
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
